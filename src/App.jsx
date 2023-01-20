@@ -1,5 +1,5 @@
-export function App (){
- throw new Error("eita geovanaa, o forinhho caiu");
+import './styles/global.scss';
 
+export function App (){
     return <h1>Hello WorlD Brasil</h1>
 }
