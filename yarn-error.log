@@ -1,8 +1,8 @@
 Arguments: 
-  D:\Program Files\node.exe C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js webpack serve --mode development
+  D:\Program Files\node.exe C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
 
 PATH: 
-  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;D:\Program Files\;C:\Users\wesle\AppData\Local\Microsoft\WindowsApps;C:\Users\wesle\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wesle\AppData\Roaming\npm
+  C:\Users\wesle\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\wesle\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\Program Files\Git\cmd;D:\Program Files;C:\Users\wesle\AppData\Local\Microsoft\WindowsApps;C:\Users\wesle\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wesle\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.19
@@ -14,21 +14,19 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Users\wesle\Desktop\Ignite\Aulas\github-explorer\package.json: Unexpected string in JSON at position 130
-      at JSON.parse (<anonymous>)
-      at C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:92864:59)
+      at Object.<anonymous> (C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:85054:38)
       at Generator.next (<anonymous>)
       at step (C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
       at C:\Users\wesle\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 
 npm manifest: 
   {
     "name": "github-explorer",
     "version": "1.0.0",
     "main": "index.js",
-    "scripts": {
-      "start:dev": "webpack serve"
-     }
     "license": "MIT",
     "dependencies": {
       "react": "^18.2.0",

@@ -1,3 +1,5 @@
 export function App (){
-    return <h1>Hello WorlD</h1>
+ throw new Error("eita geovanaa, o forinhho caiu");
+
+    return <h1>Hello WorlD Brasil</h1>
 }
