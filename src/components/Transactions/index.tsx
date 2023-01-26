@@ -32,8 +32,7 @@ export function TransactionsTable(){
                         <td className="withdrow">R$ -1.000</td>
                         <td>Casa</td>
                         <td>02/02/2023</td>                
-                    </tr>
-                 
+                    </tr>   
                 </tbody>
 
             </table>
