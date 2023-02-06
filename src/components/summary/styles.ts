@@ -17,6 +17,9 @@ div {
         display:flex;
         align-items:center;
         justify-content:space-between;
+        img{
+           height: 50px ;
+        }
     }
 
     strong {
@@ -28,7 +31,8 @@ div {
     }
 
     &.highlight-background{
-        background-color: #49c0b6;
+        background-color: var(--green);
     }
 }
 `;
+
