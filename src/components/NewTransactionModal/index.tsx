@@ -28,11 +28,7 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
     };
 
     api.post ('/transactions', data)
-    
-
   }
-
-
     return (
         <Modal
         isOpen= {isOpen} 
@@ -59,7 +55,7 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
             type="number" 
             placeholder="Valor"
             value={value}
-            onChange={event =>setValue (Number (event.target.value))}
+            onChange={event =>setValue (Number  (event.target.value))}
             />
             
             <input placeholder="Categoria"

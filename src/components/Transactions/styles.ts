@@ -20,18 +20,18 @@ export const Container = styled.div`
     td{
         padding:1rem 2rem;
         border:0;
-        background-color:black;
+        background-color: rgb(51 205 149 / 0.1);
         color:var(--text-body);
         border-radius:0.25rem ;
 
         &:first-child{
-            color:lightblue;
+            color:black;
         }
 
         &.deposit {
             color:green;
         }
-        &.withdrow {
+        &.withdraw {
             color:red;
         }
 
