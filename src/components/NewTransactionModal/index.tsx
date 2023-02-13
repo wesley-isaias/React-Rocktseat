@@ -7,8 +7,6 @@ import outcomeImg from '../../assets/outcome.svg';
 import closeImg from '../../assets/close.svg';
 import { Container, TransactionTypeContainer,RadioBox } from './styles';
 
-
-
 interface NewTransactionModalProps {
     isOpen: boolean;
     onRequestClose: () => void;
@@ -23,15 +21,22 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
   const [category, setCategory] = useState ('');
   const [type, setType] = useState('deposit');
 
-  function handleCreateNewTransaction (event:FormEvent) {
+  async function handleCreateNewTransaction (event:FormEvent) {
     event.preventDefault();
 
-    createTransaction({
+    await createTransaction({
       title,
       amount,
       category,
       type,
     })
+
+
+    setTitle ('');
+    setAmount(0);
+    setCategory('');
+    setType('deposit');
+    onRequestClose();
 
   }
     return (
@@ -60,7 +65,7 @@ export function NewTransactionModal ({isOpen, onRequestClose}:NewTransactionModa
             type="number" 
             placeholder="Valor"
             value={amount}
-            onChange={event =>setAmount (Number  (event.target.value))}
+            onChange={event =>setAmount(Number(event.target.value))}
             />
             
             <input placeholder="Categoria"

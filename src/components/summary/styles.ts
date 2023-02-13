@@ -22,7 +22,7 @@ div {
         }
     }
 
-    strong {
+    strong{
         display: block;
         margin-top: 1rem;
         font-size: 2rem;
