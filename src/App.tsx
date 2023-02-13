@@ -4,7 +4,7 @@ import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/header";
 import { GlobalStyle } from "./styles/global";
 import { NewTransactionModal } from './components/NewTransactionModal';
-import { TransactionProvider} from './TransactionsContext';
+import { TransactionProvider} from './hooks/useTransactions';
 
 Modal.setAppElement('#root');
 
@@ -29,12 +29,9 @@ export function App() {
       onRequestClose={handleCloseNewTransactionModal}      
    />
 
-
-   
     <GlobalStyle />
     </TransactionProvider>
       
-   
   );
 }
 
